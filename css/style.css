@@ -1,1 +1,28 @@
+html{
+    background-color: #DB504A;
+}
 
+.meny{
+    display: none;
+}
+
+li:hover .meny{
+    display: block;
+}
+ul{
+    list-style-type: no;
+}
+
+@font-face {
+    font-family: 'Harlow Solid Regular';
+    src: url('/Font/Harlow\ Solid\ Regular.ttf') format('truetype');
+}
+
+h1{
+    font-family: 'Harlow Solid Regular';
+    
+}
+
+.fa-solid fa-cart-shopping{
+
+}
