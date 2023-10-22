@@ -1,10 +1,24 @@
 html{
     background-color: #DB504A;
+    height: 100%;
+}
+
+
+body{
+    height: 100%;
+}
+
+
+footer{
+    position: relative;
+    text-align: center;
 }
 
 .meny{
     display: none;
 }
+
+
 
 li:hover .meny{
     display: block;
@@ -23,6 +37,87 @@ h1{
     
 }
 
-.fa-solid fa-cart-shopping{
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.produkt1, .produkt2, .produkt3{
+    width: 200px;
+}
+
+
+header, nav, main, footer {
+    padding: 20px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fa-cart-shopping{
+    position: absolute;
+    left: 20px;
+    top: 97px;
 
 }
+
+.søkebar{
+    margin-top: 30px;
+    height: 50px;
+    width: 90%;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    body{
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer"
+        ;
+    }
+nav ul{
+    flex-direction: row;
+
+}
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px
+}
+.produkt1, .produkt2, .produkt3{
+    width: auto;
+}
+
+.søkebar{
+    width: 90%;
+}
+
+footer{
+    position: relative;
+    text-align: center;
+}
+}
+
