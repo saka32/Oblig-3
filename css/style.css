@@ -96,6 +96,7 @@ header{
     margin-top: 30px;
     height: 50px;
     width: 90%;
+    border-radius: 15px;
 }
 
 
@@ -137,6 +138,10 @@ footer{
 
 .om-oss-tekst{
     text-align: center;
+}
+
+.produkt1, .produkt2, .produkt3{
+    width: 90%;
 }
 }
 
