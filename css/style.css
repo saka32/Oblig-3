@@ -24,6 +24,10 @@ footer{
     display: none;
 }
 
+.om-oss-tekst{
+    text-align: center;
+}
+
 .link{
     text-decoration: none;
     color: black;
@@ -128,6 +132,10 @@ main{
 
 footer{
     position: relative;
+    text-align: center;
+}
+
+.om-oss-tekst{
     text-align: center;
 }
 }
